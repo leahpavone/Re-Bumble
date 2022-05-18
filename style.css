@@ -30,7 +30,7 @@ NAVIGATION
 .navigation-ctr {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 64px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 
@@ -42,6 +42,7 @@ NAVIGATION
   display: flex;
   align-items: center;
   width: 100%;
+  height: 64px;
   list-style: none;
   text-decoration: none;
   color: #000;
@@ -71,20 +72,27 @@ NAVIGATION
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  max-height: 64px;
 }
 
 .bumble-logo {
-  height: 60px;
+  height: 105px;
   width: 100%;
 }
 
 .language-selector {
   display: flex;
-  align-items: center;
+  margin-top: 5px;
+  margin-left: 15px;
+  gap: 2px;
 }
 
-.location {
+.location-text {
   font-size: 12px;
+}
+
+.language-icon {
+  margin-top: 3px;
 }
 
 /* /////////////////////////////////////////////////////////
@@ -156,7 +164,7 @@ HERO SECTION
   transition: all 0.3s;
 }
 
-.join-btn {
+.yellow-btn {
   background: #ffc629;
   color: #fff;
   border: none;
@@ -169,28 +177,84 @@ HERO SECTION
 }
 
 /* /////////////////////////////////////////////////////////
-TESTIMONIALS
+FEATURES
 ///////////////////////////////////////////////////////// */
 
-.testimonials-ctr {
-  width: 100%;
-}
-
-.testimonials-heading {
-}
-
-.testimonials {
-  display: flex;
+.features-ctr {
+  /* display: block;
+  text-align: center; */
   width: 100vw;
-  margin-top: 16px;
+}
+
+.features-heading {
+  font-size: 26px;
+  margin-top: 50px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 30px 50px 100px 50px;
+  width: 100vw;
+  /* margin-top: 16px; */
 }
 
 .date {
 }
 
-.testimonial-img {
-  min-height: 200px;
-  max-width: 100%;
+.features-img {
+  /* min-height: 200px; */
+  max-height: 400px;
+  max-width: 400px;
+  /* max-width: 100%; */
 }
-.testimonail-text {
+
+.features-text {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 350px;
+}
+
+.learn-btn {
+  text-align: center;
+}
+
+/* /////////////////////////////////////////////////////////
+WHY BUMBLE
+///////////////////////////////////////////////////////// */
+
+.why-ctr {
+  height: 100vh;
+  width: 100%;
+  padding: 32px;
+}
+
+.why-inner-ctr {
+  height: 100vh;
+  max-height: 800px;
+  /* max-width: 618px; */
+  background: url(img/yellow-message.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  /* margin-left: 32px; */
+}
+
+.why-content {
+  background: #fff;
+  position: absolute;
+  right: 0;
+  padding: 32px;
+}
+.why-heading {
+}
+.why-text {
 }

@@ -7,8 +7,6 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" />
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -16,51 +14,110 @@
     <title>Re-Bumble</title>
   </head>
   <body>
+
     <section class="navigation-section">
       <nav class="navigation-ctr">
-        <ul class="nav-items">
-          <div class="left-nav">
-          <li class="nav-item">
+        <div class="left-nav">
+        <div class="left-nav-items">
             <a href="#">
               <img
                 class="bumble-logo"
-                src="img/bumble-logo2.png"
+                src="img/bumblelogo.png"
                 alt="bumble logo" />
             </a>
-          </li>
 
-          <div class="language-selector">
-          <li class="nav-item location-text">
-            English (United Kingdom)
-          </li>
-          <li class="nav-item">
-            <ion-icon class="language-icon" name="caret-down-outline"></ion-icon>
-          </li>
-        </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <div class="dropbtn-inner">
+                <label class="dropbtn-label">English (United Kingdom)</label>
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </div>
+              </button>
+
+              <div class="dropdown-content">
+                <div class="dropdown-content-inner">
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">English (United Kingdom)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">English (United States)
+                    </span>
+                  </a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">English (India)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">हिंदी</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Français</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Français (Canada)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Português (Brasil)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Português (Portugal)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Nederlands</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Italiano</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Deutsch</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Español (España)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Español (México)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Русский</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Svenska</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Norsk bokmål</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Dansk</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">日本語</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">한국어</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Suomi</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">中文 (简体)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">中文 (繁體)</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Polski</span></a>
+                <a class="dropdown-content-item" href="#">
+                  <span class="dropdown-content-title">Bahasa Indonesia</span></a>
+              </div>
+              </div>
+
           </div>
-          <div class="right-nav">
-          <li class="nav-item">
-            <a href="#">The Shop</a>
+          </div>
+          </div>
+          
+        <!-- <div class="right-nav"> -->
+          <ul class="right-nav-items">
+          <li>
+            <a class="nav-item" href="#">The Shop</a>
           </li>
-          <li class="nav-item">
-            <a href="#">The App</a>
+          <li>
+            <a class="nav-item" href="#">The App</a>
           </li>
-          <li class="nav-item">
-            <a href="#">Ambassadors</a>
+          <li>
+            <a class="nav-item" href="#">Ambassadors</a>
           </li>
-          <li class="nav-item">
-            <a href="#">Events</a>
+          <li>
+            <a class="nav-item" href="#">Events</a>
           </li>
-          <li class="nav-item">
-            <a href="#">The Buzz</a>
+          <li>
+            <a class="nav-item" href="#">The Buzz</a>
           </li>
-          <li class="nav-item">
-            <a href="#">About</a>
+          <li>
+            <a class="nav-item" href="#">About</a>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
       </nav>
     </section>
+
 
     <section class="hero-section">
       <div class="hero-ctr">
@@ -96,6 +153,8 @@
         <div class="features">
           <div class="date">
             <img class="features-img" src="img/bre.webp" alt="bumble date" />
+            <div class="img-label date-label">Bumble Date</div>
+            <div class="features-text-btn-ctr">
             <div class="features-text">On Bumble, women make the first move. We’re levelling the playing field and changing the dynamics of dating. We believe relationships should begin with respect and equality.</div>
             <div class="learn-btn feature-btn">
               <a href="#">
@@ -103,19 +162,26 @@
                 </button>
             </a>
             </div>
+            </div>
           </div>
           <div class="bizz">
-            <img class="features-img" src="img/matt.webp" alt="bumble Bizz" />
+            
+              <img class="features-img" src="img/matt.webp" alt="bumble Bizz" />
+              <div class="img-label bizz-label">Bumble Bizz</div>
+          <div class="features-text-btn-ctr">
             <div class="features-text">Career opportunities come about when you expand your network. On Bumble Bizz, you can pursue a career change, meet team members, or become a mentor.</div>
             <div class="learn-btn feature-btn">
               <a href="#">
                 <button class="btn yellow-btn">Learn More
                 </button>
-            </a>
+              </a>
+            </div>
             </div>
           </div>
           <div class="bff">
             <img class="features-img" src="img/abigail.webp" alt="bumble BFF" />
+            <div class="img-label bff-label">Bumble BFF</div>
+            <div class="features-text-btn-ctr">
             <div class="features-text">Whether you’re new to a city or looking to expand your social circle, Bumble BFF is a simplified way to create meaningful friendships.</div>
             <div class="learn-btn">
               <a href="#">
@@ -165,7 +231,7 @@
               <div class="slider-heading">Make the First Move</div>
               <div class="slider-text">Women talk first to set an equal tone from the start.</div>
               <div class="slider-btn">
-                <button class="btn yellow-btn">Here's how</button> 
+                <button class="btn yellow-btn how-btn">Here's how</button> 
               </div>
             </div>
           </div>
@@ -197,32 +263,32 @@
           </div>
         </div> -->
         </div>
-      <!-- </div> -->
-
-        <div class="arrow-ctr">
-
-          <button class="slider-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          <button class="slider-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-
       </div>
+      <!-- </div> -->
         <div class="slider-pagination-ctr">
           <div class="slider-pagination">
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
+            <button class="slider-dot"></button>
+            <button class="slider-dot"></button>
+            <button class="slider-dot"></button>
           </div>
         </div>
+      <!-- </div> -->
+
+      <div class="arrow-ctr">
+
+        <button class="slider-arrow right-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button class="slider-arrow left-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
+    </div>
 
     </section>
 
@@ -235,7 +301,7 @@
        <div class="footer-logo-ctr">
          <a href="#"><img
           class="bumble-logo"
-          src="img/bumble-logo2.png"
+          src="img/bumblelogo.png"
           alt="bumble logo" /></a>
           <ul class="social-logos">
             <li class="social-logo"><a href="#">

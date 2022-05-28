@@ -36,9 +36,6 @@ NAVIGATION
   overflow: hidden;
 }
 
-/* .left-nav {
-} */
-
 .left-nav-items {
   height: 100%;
   display: flex;
@@ -52,17 +49,8 @@ NAVIGATION
   padding-left: 20px;
 }
 
-.dropdown {
-  /* overflow: hidden; */
-  /* z-index: 1; */
-}
-
-.dropbtn {
-}
-
 .dropbtn-inner {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
 }
 
@@ -74,9 +62,6 @@ NAVIGATION
   border: none;
   background: none;
   margin: 0;
-}
-
-.dropdown:hover .dropbtn {
 }
 
 .dropbtn-label {
@@ -124,16 +109,6 @@ NAVIGATION
   transition: all 0.1s;
 }
 
-.dropdown-content-inner a:hover {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start; */
-
-  /* width: 100%; */
-  color: #ffc629;
-  transition: all 0.1s;
-}
-
 .dropdown-content .dropdown-content-title:hover,
 .dropdown-content .dropdown-content-title:active {
   color: #ffc629;
@@ -165,6 +140,7 @@ NAVIGATION
   height: 100%;
   padding-right: 16px;
   line-height: 1.35;
+  display: relative;
 }
 
 .nav-item {
@@ -180,6 +156,82 @@ NAVIGATION
 .nav-item:hover,
 .nav-item:active {
   color: #ffc629;
+}
+
+.nav-item_dropdown:hover,
+.nav-item_dropdown:active {
+  color: inherit;
+}
+
+.nav-item_dropdown {
+  height: 100%;
+}
+
+.dropdown_2 {
+  /* margin: 0;
+  height: 100%;
+  width: 100%; */
+  overflow: hidden;
+}
+
+.dropdown-content_2 {
+  position: absolute;
+  transform: translateX(-15%);
+  padding-top: 24px;
+  padding-bottom: 8px;
+  background: #fff;
+
+  display: none;
+}
+
+.dropdown-content-inner_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.dropdown-content-item_2 {
+  text-decoration: none;
+  width: 100%;
+}
+
+.dropdown-content-title_2 {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  /* padding: 8px; */
+}
+
+.date_2 {
+  color: #ffc629;
+}
+
+.bff_2 {
+  color: #019abf;
+}
+
+.bizz_2 {
+  color: #ff6c37;
+}
+
+.dropdown-content-title_2:hover,
+.dropdown-content-title_2:active {
+  color: #000;
+  transition: all 0.1s;
+}
+
+.dropdown_2:hover .dropdown-content_2 {
+  display: block;
+  transition: all 0.3s;
+}
+
+.dropdown-content-item_2 {
+  color: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+  width: 100%;
 }
 
 /* /////////////////////////////////////////////////////////
@@ -280,12 +332,15 @@ FEATURES
 
 .features {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: stretch;
+  align-items: stretch;
   width: 100vw;
-  min-height: 100%;
+  min-height: 100vh;
   padding-top: 30px;
   padding-left: 32px;
   padding-right: 32px;
+  gap: 16px;
   height: 100%;
   /* position: relative; */
 }
@@ -315,35 +370,53 @@ FEATURES
 
 .features-img {
   position: relative;
+  height: 100%;
 }
 
 .features-img:nth-child(2) {
-  padding-left: 32px;
-  padding-right: 32px;
+  /* padding-left: 32px;
+  padding-right: 32px; */
   /* height: 100%; */
 }
 
-.date,
-.bizz,
-.bff {
+.feature-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  justify-content: stretch;
   position: relative;
-}
-
-.feature-btn button {
-  align-items: flex-end;
+  /* height: 100%; */
+  /* width: 100%; */
+  flex: 1 0 0%;
 }
 
 .features-img {
-  max-height: 400px;
-  max-width: 400px;
+  /* max-height: 400px;
+  max-width: 400px; */
+  max-width: 100%;
 }
 
 .features-text-btn-ctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  /* margin-bottom: auto; */
   padding: 0 32px;
-  margin-bottom: auto;
+  /* flex: 1 0 0%; */
+}
+
+/* .features-text-btn-ctr .feature-btn {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+} */
+
+.feature-btn {
+  /* display: flex;
+  justify-content: stretch;
+  align-items: center; */
+  /* margin: auto; */
 }
 
 .features-text {
@@ -591,9 +664,9 @@ FOOTER
 }
 .footer-heading {
   text-align: center;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: bold;
-  margin-top: 48px;
+  margin-top: 80px;
   margin-bottom: 96px;
 }
 
@@ -637,6 +710,7 @@ FOOTER
   margin-top: 32px;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 32px;
 }
 
 .footer-item-ctr {
@@ -646,6 +720,7 @@ FOOTER
   flex-wrap: wrap;
   gap: 5px;
   list-style: none;
+  line-height: 1;
 }
 
 .footer-item {
@@ -655,7 +730,7 @@ FOOTER
 
 .footer-caption {
   margin-top: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .footer-caption-text {

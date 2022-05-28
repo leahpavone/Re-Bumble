@@ -24,79 +24,162 @@ NAVIGATION
 ///////////////////////////////////////////////////////// */
 
 .navigation-section {
-  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* z-index: 1; */
 }
 
 .navigation-ctr {
-  display: flex;
-  align-items: center;
-  height: 64px;
-  width: 100vw;
   background-color: rgba(255, 255, 255, 0.97);
-
-  padding-left: 15px;
-  padding-right: 15px;
-  position: fixed;
-  z-index: 9999;
-}
-
-.nav-items {
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 64px;
-  list-style: none;
-  text-decoration: none;
-  color: #000;
   justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  overflow: hidden;
 }
 
-.left-nav {
+/* .left-nav {
+} */
+
+.left-nav-items {
+  height: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
-  height: 100%;
-}
-
-.left-nav:link {
-  color: #000;
-}
-
-.right-nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  height: 100%;
-}
-
-.nav-item a {
-  cursor: pointer;
-  /* color: #333; */
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  max-height: 64px;
 }
 
 .bumble-logo {
-  height: 105px;
+  height: 32px;
+  /* width: 188px; */
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.dropdown {
+  /* overflow: hidden; */
+  /* z-index: 1; */
+}
+
+.dropbtn {
+}
+
+.dropbtn-inner {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.dropbtn ion-icon {
+  width: 16px;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+}
+
+.dropbtn-label {
+  font-size: 12px;
+  /* color: #ffc629; */
+}
+
+.dropdown-content {
+  overflow-y: scroll;
+  max-height: 280px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid #f1f1f1;
+  background: #fff;
+  position: absolute;
+  transform: translateX(40%);
+  /* right: 0; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* z-index: 1; */
+  display: none;
+}
+
+.dropdown-content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
 
-.language-selector {
-  display: flex;
-  margin-top: 5px;
-  margin-left: 15px;
-  gap: 2px;
-  cursor: pointer;
+.dropdown-content-inner:hover {
+  color: #ffc629;
+  transition: all 0.1s;
 }
 
-.location-text {
+.dropdown-content-item {
+  color: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.dropdown-content-item:hover {
+  color: #ffc629;
+  transition: all 0.1s;
+}
+
+.dropdown-content-inner a:hover {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+
+  /* width: 100%; */
+  color: #ffc629;
+  transition: all 0.1s;
+}
+
+.dropdown-content .dropdown-content-title:hover,
+.dropdown-content .dropdown-content-title:active {
+  color: #ffc629;
+  transition: all 0.1s;
+}
+
+.dropdown-content-title:hover,
+.dropdown-content-title:active {
+  color: #ffc629;
+  transition: all 0.1s;
+}
+
+.dropdown-content-title {
+  color: #5a4f31;
   font-size: 12px;
+  width: 100%;
 }
 
-.language-icon {
-  margin-top: 3px;
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: all 0.3s;
+}
+
+.right-nav-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  height: 100%;
+  padding-right: 16px;
+  line-height: 1.35;
+}
+
+.nav-item {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  color: #ffc629;
 }
 
 /* /////////////////////////////////////////////////////////
@@ -204,12 +287,40 @@ FEATURES
   padding-left: 32px;
   padding-right: 32px;
   height: 100%;
+  /* position: relative; */
+}
+
+.img-label {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.8;
+  line-height: 1.4;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.date-label {
+  top: 30%;
+}
+
+.bizz-label {
+  top: 50%;
+}
+
+.bff-label {
+  bottom: 80%;
+}
+
+.features-img {
+  position: relative;
 }
 
 .features-img:nth-child(2) {
   padding-left: 32px;
   padding-right: 32px;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .date,
@@ -218,6 +329,7 @@ FEATURES
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .feature-btn button {
@@ -229,9 +341,15 @@ FEATURES
   max-width: 400px;
 }
 
+.features-text-btn-ctr {
+  padding: 0 32px;
+  margin-bottom: auto;
+}
+
 .features-text {
+  /* padding: 0 32px; */
   text-align: center;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
   max-width: 350px;
 }
@@ -342,7 +460,6 @@ SLIDER
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
 }
 /* .slider-inner_catfishing {
   background: url(img/phone-typing-2.webp);
@@ -371,6 +488,7 @@ SLIDER
   height: 200px;
   background-color: #fff;
 }
+
 .slider-content {
   display: flex;
   flex-direction: column;
@@ -386,20 +504,22 @@ SLIDER
   padding-top: 15px;
   padding-bottom: 20px;
 }
-.slider-btn {
+.how-btn {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .arrow-ctr {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  z-index: 1;
+  top: 50%; */
+  /* width: calc(100% - 64px); */
+  /* z-index: 1; */
+  /* left: 50%; */
+  /* transform: translate(-25%); */
 }
 
 .slider-arrow {
@@ -411,6 +531,22 @@ SLIDER
   background-color: #ffc629;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.slider-arrow:active {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.left-arrow {
+  right: 0;
+}
+
+.right-arrow {
+  left: 0;
 }
 
 .arrow-icon {
@@ -436,11 +572,11 @@ SLIDER
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.slider-dot:link,
 .slider-dot:hover {
-  color: #ffc629;
+  background-color: #ffc629;
 }
 
 /* /////////////////////////////////////////////////////////
@@ -530,9 +666,6 @@ FOOTER
 }
 
 /* //////////////////////////// */
-
-.nav-item a:hover,
-.nav-item a:active,
 .footer-item:hover,
 .footer-item:active {
   color: #ffc629;

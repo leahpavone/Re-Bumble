@@ -321,28 +321,54 @@ FEATURES
 
 .features-ctr {
   width: 100vw;
+  min-height: 100vh;
+  margin-top: 50px;
 }
 
 .features-heading {
   font-size: 26px;
-  margin-top: 50px;
   letter-spacing: 1.4px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .features {
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: stretch;
-  align-items: stretch;
-  width: 100vw;
+  justify-content: center;
   min-height: 100vh;
-  padding-top: 30px;
+  width: 100%;
   padding-left: 32px;
   padding-right: 32px;
   gap: 16px;
-  height: 100%;
-  /* position: relative; */
+}
+
+.feature-item {
+  display: flex;
+  min-height: 100%;
+  position: relative;
+}
+
+.feature-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-img {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.features-text {
+  text-align: center;
+  max-width: 350px;
+  margin-top: 28px;
+  margin-bottom: auto;
+}
+
+.feature-btn {
+  text-align: center;
+  margin-top: 32px;
 }
 
 .img-label {
@@ -366,69 +392,6 @@ FEATURES
 
 .bff-label {
   bottom: 80%;
-}
-
-.features-img {
-  position: relative;
-  height: 100%;
-}
-
-.features-img:nth-child(2) {
-  /* padding-left: 32px;
-  padding-right: 32px; */
-  /* height: 100%; */
-}
-
-.feature-item {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: stretch;
-  position: relative;
-  /* height: 100%; */
-  /* width: 100%; */
-  flex: 1 0 0%;
-}
-
-.features-img {
-  /* max-height: 400px;
-  max-width: 400px; */
-  max-width: 100%;
-}
-
-.features-text-btn-ctr {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  /* margin-bottom: auto; */
-  padding: 0 32px;
-  /* flex: 1 0 0%; */
-}
-
-/* .features-text-btn-ctr .feature-btn {
-  display: flex;
-  justify-content: stretch;
-  align-items: center;
-} */
-
-.feature-btn {
-  /* display: flex;
-  justify-content: stretch;
-  align-items: center; */
-  /* margin: auto; */
-}
-
-.features-text {
-  /* padding: 0 32px; */
-  text-align: center;
-  padding-top: 28px;
-  padding-bottom: 30px;
-  max-width: 350px;
-}
-
-.learn-btn {
-  text-align: center;
 }
 
 /* /////////////////////////////////////////////////////////
@@ -608,6 +571,7 @@ SLIDER
   top: 50%;
 }
 
+.slider-arrow:hover,
 .slider-arrow:active {
   background-color: #333;
   color: #fff;
